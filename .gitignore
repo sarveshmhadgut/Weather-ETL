@@ -1,0 +1,24 @@
+# General
+.git
+.DS_Store
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.mypy_cache/
+dist/
+build/
+*.egg-info/
+
+# Airflow / Astro
+.astro/
+airflow_settings.yaml
+airflow-webserver.pid
+webserver_config.py
+airflow.cfg
+airflow.db
+logs/
+standalone_admin_password.txt

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "eltweather"
+version = "0.1.0"
+description = "ELT Weather Pipeline with Airflow"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "apache-airflow>=2.10.0",
+    "apache-airflow-providers-http>=5.5.0",
+    "apache-airflow-providers-postgres>=6.4.1",
+    "requests",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
